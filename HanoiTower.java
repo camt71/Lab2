@@ -5,10 +5,10 @@ public class HanoiTower {
 
 	public static void MoveTower(int disk, String source, String dest, String spare) {
 		if (disk == 1) {
-			System.out.println("move disk from " + source + " to " + dest);
+			System.out.println("move " + disk + " from " + source + " to " + dest);
 		} else {
 			MoveTower(disk - 1, source, spare, dest);
-			System.out.println("move disk from " + source + " to " + dest);
+			System.out.println("move " + disk + " from " + source + " to " + dest);
 			MoveTower(disk - 1, spare, dest, source);
 		}
 		count++;
