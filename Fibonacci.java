@@ -16,7 +16,7 @@ public class Fibonacci {
 	public static void printFibonacci(int n) {
 		int[] res = new int[n + 1];// do dai mang se lon hon so n 1 don vi
 		int index = 0;
-		for (int i = 0; i < res.length; i++) {
+		for (int i = 0; i < res.length-1; i++) {
 			res[index++] = getFibonacci(i);
 			System.out.print(res[i] + " ");
 		}
